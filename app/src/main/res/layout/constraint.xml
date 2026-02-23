@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ff683e"
+        android:text="BTN1"
+        app:cornerRadius="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#19C7C1"
+        android:text="BTN2"
+        app:cornerRadius="8dp"
+        app:layout_constraintLeft_toRightOf="@id/button5"
+        app:layout_constraintRight_toLeftOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@id/button1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:text="BTN3"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@id/button4"
+        app:layout_constraintLeft_toRightOf="@id/button2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#BA68C8"
+        android:text="BTN4"
+        app:cornerRadius="8dp"
+        app:layout_constraintLeft_toLeftOf="@id/button5"
+        app:layout_constraintRight_toRightOf="@id/button1"
+        app:layout_constraintTop_toBottomOf="@id/button5" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFB74D"
+        android:text="BTN5"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@id/button4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/button2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="button5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

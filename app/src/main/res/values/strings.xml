@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TP3</string>
+    <string name="textView_student_group">Groupe :</string>
+    <string name="student_firstname">Prénom :</string>
+    <string name="send_button">Envoyez</string>
+    <string name="message_hint">Écrire votre message ici ..</string>
+    <string name="student_famillyname">Nom :</string>
+</resources>
