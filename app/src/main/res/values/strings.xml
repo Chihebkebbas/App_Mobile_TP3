@@ -5,4 +5,16 @@
     <string name="send_button">Envoyez</string>
     <string name="message_hint">Écrire votre message ici ..</string>
     <string name="student_famillyname">Nom :</string>
+    <string name="airline_company">Compagnie aérienne</string>
+    <string name="departure">Départ</string>
+    <string name="arrival">Arrivée</string>
+    <string name="date_format">Date (JJ/MM/AAAA)</string>
+    <string name="time_format">Heure (HH:MM)</string>
+    <string name="check_box_text">C\'est un vol retour</string>
+    <string name="airline_class">Classe de réservation</string>
+    <string name="eco">Économique</string>
+    <string name="business">Affaires</string>
+    <string name="first">Première</string>
+    <string name="flight_quality">Qualité du vol</string>
+
 </resources>
